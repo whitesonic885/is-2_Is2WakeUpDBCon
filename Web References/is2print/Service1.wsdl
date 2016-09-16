@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://Walkthrough/XmlWebServices/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://Walkthrough/XmlWebServices/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://Walkthrough/XmlWebServices/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" targetNamespace="http://Walkthrough/XmlWebServices/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:types>
     <s:schema elementFormDefault="qualified" targetNamespace="http://Walkthrough/XmlWebServices/">
       <s:element name="Get_InvoicePrintData">
@@ -176,6 +176,32 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="Get_ConsigneePrintData3">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="sKey" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="sKana" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sTCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sTelNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sTelNo2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sTelNo3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="iSortLabel1" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="iSortPat1" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="iSortLabel2" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="iSortPat2" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sUpdateDay" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ConsigneePrintData3Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_ConsigneePrintData3Result" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
       <s:element name="Get_PublishedPrintData2">
         <s:complexType>
           <s:sequence>
@@ -229,6 +255,66 @@
         <s:complexType>
           <s:sequence>
             <s:element minOccurs="0" maxOccurs="1" name="Get_PublishedPrintData4Result" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_DeliShop">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="sKey" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_DeliShopResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_DeliShopResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ShopZip">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="sKey" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ShopZipResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_ShopZipResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ShopType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="sKey" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ShopTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_ShopTypeResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_PrefDeliShop">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="sKey" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_PrefDeliShopResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_PrefDeliShopResult" type="tns:ArrayOfString" />
           </s:sequence>
         </s:complexType>
       </s:element>
@@ -318,6 +404,12 @@
   <wsdl:message name="Get_ConsigneePrintData2SoapOut">
     <wsdl:part name="parameters" element="tns:Get_ConsigneePrintData2Response" />
   </wsdl:message>
+  <wsdl:message name="Get_ConsigneePrintData3SoapIn">
+    <wsdl:part name="parameters" element="tns:Get_ConsigneePrintData3" />
+  </wsdl:message>
+  <wsdl:message name="Get_ConsigneePrintData3SoapOut">
+    <wsdl:part name="parameters" element="tns:Get_ConsigneePrintData3Response" />
+  </wsdl:message>
   <wsdl:message name="Get_PublishedPrintData2SoapIn">
     <wsdl:part name="parameters" element="tns:Get_PublishedPrintData2" />
   </wsdl:message>
@@ -335,6 +427,30 @@
   </wsdl:message>
   <wsdl:message name="Get_PublishedPrintData4SoapOut">
     <wsdl:part name="parameters" element="tns:Get_PublishedPrintData4Response" />
+  </wsdl:message>
+  <wsdl:message name="Get_DeliShopSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_DeliShop" />
+  </wsdl:message>
+  <wsdl:message name="Get_DeliShopSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_DeliShopResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_ShopZipSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_ShopZip" />
+  </wsdl:message>
+  <wsdl:message name="Get_ShopZipSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_ShopZipResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_ShopTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_ShopType" />
+  </wsdl:message>
+  <wsdl:message name="Get_ShopTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_ShopTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_PrefDeliShopSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_PrefDeliShop" />
+  </wsdl:message>
+  <wsdl:message name="Get_PrefDeliShopSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_PrefDeliShopResponse" />
   </wsdl:message>
   <wsdl:message name="wakeupDBSoapIn">
     <wsdl:part name="parameters" element="tns:wakeupDB" />
@@ -389,6 +505,10 @@
       <wsdl:input message="tns:Get_ConsigneePrintData2SoapIn" />
       <wsdl:output message="tns:Get_ConsigneePrintData2SoapOut" />
     </wsdl:operation>
+    <wsdl:operation name="Get_ConsigneePrintData3">
+      <wsdl:input message="tns:Get_ConsigneePrintData3SoapIn" />
+      <wsdl:output message="tns:Get_ConsigneePrintData3SoapOut" />
+    </wsdl:operation>
     <wsdl:operation name="Get_PublishedPrintData2">
       <wsdl:input message="tns:Get_PublishedPrintData2SoapIn" />
       <wsdl:output message="tns:Get_PublishedPrintData2SoapOut" />
@@ -401,6 +521,22 @@
       <wsdl:input message="tns:Get_PublishedPrintData4SoapIn" />
       <wsdl:output message="tns:Get_PublishedPrintData4SoapOut" />
     </wsdl:operation>
+    <wsdl:operation name="Get_DeliShop">
+      <wsdl:input message="tns:Get_DeliShopSoapIn" />
+      <wsdl:output message="tns:Get_DeliShopSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_ShopZip">
+      <wsdl:input message="tns:Get_ShopZipSoapIn" />
+      <wsdl:output message="tns:Get_ShopZipSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_ShopType">
+      <wsdl:input message="tns:Get_ShopTypeSoapIn" />
+      <wsdl:output message="tns:Get_ShopTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_PrefDeliShop">
+      <wsdl:input message="tns:Get_PrefDeliShopSoapIn" />
+      <wsdl:output message="tns:Get_PrefDeliShopSoapOut" />
+    </wsdl:operation>
     <wsdl:operation name="wakeupDB">
       <wsdl:input message="tns:wakeupDBSoapIn" />
       <wsdl:output message="tns:wakeupDBSoapOut" />
@@ -411,7 +547,7 @@
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="Service1Soap" type="tns:Service1Soap">
-    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="Get_InvoicePrintData">
       <soap:operation soapAction="http://Walkthrough/XmlWebServices/Get_InvoicePrintData" style="document" />
       <wsdl:input>
@@ -502,6 +638,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="Get_ConsigneePrintData3">
+      <soap:operation soapAction="http://Walkthrough/XmlWebServices/Get_ConsigneePrintData3" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="Get_PublishedPrintData2">
       <soap:operation soapAction="http://Walkthrough/XmlWebServices/Get_PublishedPrintData2" style="document" />
       <wsdl:input>
@@ -522,6 +667,42 @@
     </wsdl:operation>
     <wsdl:operation name="Get_PublishedPrintData4">
       <soap:operation soapAction="http://Walkthrough/XmlWebServices/Get_PublishedPrintData4" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_DeliShop">
+      <soap:operation soapAction="http://Walkthrough/XmlWebServices/Get_DeliShop" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ShopZip">
+      <soap:operation soapAction="http://Walkthrough/XmlWebServices/Get_ShopZip" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ShopType">
+      <soap:operation soapAction="http://Walkthrough/XmlWebServices/Get_ShopType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_PrefDeliShop">
+      <soap:operation soapAction="http://Walkthrough/XmlWebServices/Get_PrefDeliShop" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -551,7 +732,7 @@
   <wsdl:service name="Service1">
     <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">is2print</documentation>
     <wsdl:port name="Service1Soap" binding="tns:Service1Soap">
-      <soap:address location="http://localhost/is2/is2print/Service1.asmx" />
+      <soap:address location="http://wwwis2.fukutsu.co.jp/is2/is2print/Service1.asmx" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

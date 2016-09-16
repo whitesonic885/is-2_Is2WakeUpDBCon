@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "is2WakeUpDBCon", "is2WakeUpDBCon.csproj", "{8682BEE7-5862-490D-9C61-464FC39320E7}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{8682BEE7-5862-490D-9C61-464FC39320E7}.Debug.ActiveCfg = Debug|.NET
+		{8682BEE7-5862-490D-9C61-464FC39320E7}.Debug.Build.0 = Debug|.NET
+		{8682BEE7-5862-490D-9C61-464FC39320E7}.Release.ActiveCfg = Release|.NET
+		{8682BEE7-5862-490D-9C61-464FC39320E7}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

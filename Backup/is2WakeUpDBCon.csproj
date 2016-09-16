@@ -1,0 +1,518 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.6030"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{8682BEE7-5862-490D-9C61-464FC39320E7}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = "App.ico"
+                AssemblyKeyContainerName = ""
+                AssemblyName = "is2WakeUpDBCon"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Exe"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "is2WakeUpDBCon"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+                <Reference
+                    Name = "System.Web.Services"
+                    AssemblyName = "System.Web.Services"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Web.Services.dll"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "App.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Class1.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Web References\is2address\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\is2address\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Web References\is2address\Service1.disco"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\is2address\Service1.wsdl"
+                    BuildAction = "None"
+                />
+                <Folder
+                    RelPath = "Web References\is2address\"
+                    WebReferenceUrl = "http://localhost/is2/is2address/Service1.asmx"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\is2EXDBGET\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\is2EXDBGET\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Web References\is2EXDBGET\Service1.disco"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\is2EXDBGET\Service1.wsdl"
+                    BuildAction = "None"
+                />
+                <Folder
+                    RelPath = "Web References\is2EXDBGET\"
+                    WebReferenceUrl = "http://localhost/is2ex/is2EXDBGET/Service1.asmx"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\is2EXsyukka\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\is2EXsyukka\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Web References\is2EXsyukka\Service1.disco"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\is2EXsyukka\Service1.wsdl"
+                    BuildAction = "None"
+                />
+                <Folder
+                    RelPath = "Web References\is2EXsyukka\"
+                    WebReferenceUrl = "http://localhost/is2ex/is2EXsyukka/Service1.asmx"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\is2goirai\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\is2goirai\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Web References\is2goirai\Service1.disco"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\is2goirai\Service1.wsdl"
+                    BuildAction = "None"
+                />
+                <Folder
+                    RelPath = "Web References\is2goirai\"
+                    WebReferenceUrl = "http://localhost/is2/is2goirai/Service1.asmx"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\is2hinagata\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\is2hinagata\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Web References\is2hinagata\Service1.disco"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\is2hinagata\Service1.wsdl"
+                    BuildAction = "None"
+                />
+                <Folder
+                    RelPath = "Web References\is2hinagata\"
+                    WebReferenceUrl = "http://localhost/is2/is2hinagata/Service1.asmx"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\is2init\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\is2init\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Web References\is2init\Service1.disco"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\is2init\Service1.wsdl"
+                    BuildAction = "None"
+                />
+                <Folder
+                    RelPath = "Web References\is2init\"
+                    WebReferenceUrl = "http://localhost/is2/is2init/Service1.asmx"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\is2kiji\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\is2kiji\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Web References\is2kiji\Service1.disco"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\is2kiji\Service1.wsdl"
+                    BuildAction = "None"
+                />
+                <Folder
+                    RelPath = "Web References\is2kiji\"
+                    WebReferenceUrl = "http://localhost/is2/is2kiji/Service1.asmx"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\is2logout\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\is2logout\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Web References\is2logout\Service1.disco"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\is2logout\Service1.wsdl"
+                    BuildAction = "None"
+                />
+                <Folder
+                    RelPath = "Web References\is2logout\"
+                    WebReferenceUrl = "http://localhost/is2/is2logout/Service1.asmx"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\is2Mainte\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\is2Mainte\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Web References\is2Mainte\Service1.disco"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\is2Mainte\Service1.wsdl"
+                    BuildAction = "None"
+                />
+                <Folder
+                    RelPath = "Web References\is2Mainte\"
+                    WebReferenceUrl = "http://localhost/is2/is2Maintenance/Service1.asmx"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\is2oji\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\is2oji\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Web References\is2oji\Service1.disco"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\is2oji\Service1.wsdl"
+                    BuildAction = "None"
+                />
+                <Folder
+                    RelPath = "Web References\is2oji\"
+                    WebReferenceUrl = "http://localhost/is2/is2oji/Service1.asmx"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\is2oshirase\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\is2oshirase\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Web References\is2oshirase\Service1.disco"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\is2oshirase\Service1.wsdl"
+                    BuildAction = "None"
+                />
+                <Folder
+                    RelPath = "Web References\is2oshirase\"
+                    WebReferenceUrl = "http://localhost/is2/is2oshirase/Service1.asmx"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\is2otodoke\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\is2otodoke\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Web References\is2otodoke\Service1.disco"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\is2otodoke\Service1.wsdl"
+                    BuildAction = "None"
+                />
+                <Folder
+                    RelPath = "Web References\is2otodoke\"
+                    WebReferenceUrl = "http://localhost/is2/is2otodoke/Service1.asmx"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\is2print\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\is2print\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Web References\is2print\Service1.disco"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\is2print\Service1.wsdl"
+                    BuildAction = "None"
+                />
+                <Folder
+                    RelPath = "Web References\is2print\"
+                    WebReferenceUrl = "http://localhost/is2/is2print/Service1.asmx"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\is2seikyuu\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\is2seikyuu\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Web References\is2seikyuu\Service1.disco"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\is2seikyuu\Service1.wsdl"
+                    BuildAction = "None"
+                />
+                <Folder
+                    RelPath = "Web References\is2seikyuu\"
+                    WebReferenceUrl = "http://localhost/is2/is2seikyuu/Service1.asmx"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\is2syukka\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\is2syukka\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Web References\is2syukka\Service1.disco"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\is2syukka\Service1.wsdl"
+                    BuildAction = "None"
+                />
+                <Folder
+                    RelPath = "Web References\is2syukka\"
+                    WebReferenceUrl = "http://localhost/is2/is2syukka/Service1.asmx"
+                    UrlBehavior = "Static"
+                />
+                <Folder
+                    RelPath = "Web References\"
+                    WebReferences = "TRUE"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+
